@@ -1,0 +1,61 @@
+body {
+  margin: 4px 0 0 0;
+  font-size: 24px; }
+
+#gamearea {
+  width: 960px;
+  height: 640px;
+  margin: auto;
+  background-color: #87ceeb;
+  text-align: center; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+.scard {
+  width: 100px;
+  height: 120px; }
+
+.card {
+  width: 120px;
+  height: 160px;
+  margin: 0 10px;
+  float: left;
+  background-color: #45b3e0; }
+
+#information {
+  width: 200px;
+  height: 420px;
+  background-color: #30aadc; }
+  #information > .right {
+    width: 160px;
+    height: 300px; }
+
+#field {
+  width: 40px;
+  height: 300px; }
+
+#main {
+  height: 640px;
+  margin: 0 10px; }
+  #main > div {
+    width: 740px;
+    background-color: #b3e0f2; }
+
+#opponent {
+  margin: 0 0 10px 0;
+  height: 252px; }
+
+#self {
+  margin: 0;
+  height: 378px; }
+  #self > .desk {
+    width: inherit;
+    height: 120px;
+    margin: 0 0 10px 0; }

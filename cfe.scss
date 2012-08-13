@@ -1,0 +1,90 @@
+$totalw: 960px;
+$totalh: 640px;
+$scardw: 100px;
+$scardh: 120px;
+$cardw: 120px;
+$cardh: 160px;
+$infow: 200px;
+$infoh: 420px;
+$fieldw: 40px;
+$self: 0.6;
+$bgcolor: #87CEEB;
+
+
+body {
+    margin: 4px 0 0 0;
+	font-size: 24px; 
+}
+
+#gamearea {
+    width: $totalw;
+    height: $totalh;
+    margin: auto;
+    background-color: $bgcolor;
+	text-align: center;
+	
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+
+
+.scard {
+    width: $scardw;
+    height: $scardh;
+	
+}
+
+.card {
+    width: $cardw;
+    height: $cardh;
+	margin: 0 10px;
+	float: left;
+	background-color: darken($bgcolor, 15%);
+}
+#information {
+    width: $infow;
+    height: $infoh;
+    background-color: darken($bgcolor, 20%);
+	> .right {
+		width: $infow - $fieldw;
+		height: $infoh - $scardh;
+	}
+    
+}
+
+#field {
+    width: $fieldw;
+    height: $infoh - $scardh;
+}
+
+#main {
+    height: $totalh;
+	margin: 0 10px;
+	> div {
+		width: $totalw - $infow - 10px * 2;
+		background-color: lighten($bgcolor, 10%);;
+	}
+}
+#opponent{
+    margin: 0 0 10px 0;
+	height: ($totalh - 10px) * ( 1 - $self );    
+}
+#self {
+    margin: 0;
+	height: ($totalh - 10px) * $self;
+	> .desk {
+		width: inherit;
+		height: $scardh;
+		margin: 0 0 10px 0;
+		//background-color: darken($bgcolor, 15%);
+	}
+}
+
+
